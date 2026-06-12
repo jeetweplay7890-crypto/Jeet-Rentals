@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background: #f5f7fb;
+    padding: 16px;
+}
+
+nav {
+    background: #0a2b3e;
+    color: white;
+    padding: 16px 20px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.4rem;
+    letter-spacing: -0.5px;
+}
+
+nav ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a.active {
+    border-bottom: 2px solid #ffb347;
+}
+
+.hero {
+    background: white;
+    padding: 32px 20px;
+    border-radius: 28px;
+    text-align: center;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.hero h1 {
+    font-size: 1.8rem;
+    color: #0a2b3e;
+}
+
+.filters {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+}
+
+.filter-btn {
+    background: #eef2f5;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background: #0a2b3e;
+    color: white;
+}
+
+.cars-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.car-card {
+    background: white;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    transition: 0.2s;
+}
+
+.car-img {
+    width: 100%;
+    height: 180px;
+    background: #d9e2ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.car-info {
+    padding: 18px;
+}
+
+.car-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.price {
+    font-size: 1.3rem;
+    color: #2c7a4d;
+    font-weight: 800;
+    margin: 12px 0;
+}
+
+.book-btn {
+    background: #ffb347;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.date-block {
+    font-size: 0.75rem;
+    color: #c7362b;
+    margin-top: 8px;
+    text-align: center;
+}
