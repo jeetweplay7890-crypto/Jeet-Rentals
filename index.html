@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Jeet Rentals | Fleet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">TRUST RENTALS</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fleet.html" class="active">Fleet</a></li>
+            <li><a href="bookings.html">My Bookings</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Trusted daily rentals</h1>
+            <p>Real-time availability • Clear pricing • Date holds before payment</p>
+        </section>
+
+        <div class="filters">
+            <button class="filter-btn active" data-type="all">All</button>
+            <button class="filter-btn" data-type="Sedan">Sedans</button>
+            <button class="filter-btn" data-type="SUV">SUVs</button>
+            <button class="filter-btn" data-type="EV">EVs</button>
+            <button class="filter-btn" data-type="Van">Vans</button>
+        </div>
+
+        <div class="cars-grid" id="carsGrid"></div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
