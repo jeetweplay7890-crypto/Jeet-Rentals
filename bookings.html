@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="viewport" content="width=device-width, initial-scale=1"><title>My Bookings</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<nav><div class="logo">TRUST RENTALS</div><ul><li><a href="index.html">Home</a></li><li><a href="fleet.html">Fleet</a></li><li><a href="bookings.html" class="active">My Bookings</a></li></ul></nav>
+<main><h2 style="margin:20px 0">Your rental holds</h2><div id="bookingList" class="cars-grid"></div></main>
+<script>
+    const bookings = JSON.parse(localStorage.getItem("trust_bookings") || "[]");
+    const container = document.getElementById("bookingList");
+    if(bookings.length === 0) container.innerHTML = "<p style='padding:40px;text-align:center'>No bookings yet. <a href='fleet.html'>Book a car</a></p>";
+    else {
+        container.innerHTML = bookings.map(b => `<div class='car-card'><div class='car-info'><div class='car-name'>${b.carName}</div><div>📅 ${b.start} → ${b.end}</div><div>🟡 Status: ${b.status}</div><button style='margin-top:12px;background:#e67e22'>Complete Payment (demo)</button></div></div>`).join("");
+    }
+</script>
+</body>
+</html>
